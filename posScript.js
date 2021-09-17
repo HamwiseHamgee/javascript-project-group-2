@@ -5,13 +5,22 @@ const products = [{
         price: 2000,
         description: "small bike, goes up to 60mph.",
         id: "grom",
-    }, {
+    }, 
+    {
         class: "electric",
         img: "img/xr-elite.jpg",
         name: "XR Elite",
         price: 30,
         description: "easy commuter and easy ride",
         id: "xrelite",
+    },
+    {
+        class: "human-powered",
+        img: "img/uni.jpeg",
+        name: "Butyl",
+        price: 30,
+        description: "Good luck with this, hipsters",
+        id: "butyl"
     }
 
 ]
@@ -25,7 +34,7 @@ const createProduct = function(product) {
         //Setting Id from product array
         //productdiv innerHTML passing array info
     productDiv.innerHTML = ` 
-    <a href="#"><img src="${product.img}"width="350" height="300"></a>
+    <a href="#"><img src="${product.img}"width="350"></a>
     <h3>${product.name}</h3>
      <p>Price: ${product.price}</p>
      <p>${product.description}</p>`
