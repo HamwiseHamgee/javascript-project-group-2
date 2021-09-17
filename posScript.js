@@ -5,6 +5,13 @@ const products = [{
         price: 2000,
         description: "small bike, goes up to 60mph.",
         id: "grom",
+    }, {
+        class: "electric",
+        img: "img/xr-elite.jpg",
+        name: "XR Elite",
+        price: 30,
+        description: "easy commuter and easy ride",
+        id: "xrelite",
     }
 
 ]
@@ -31,6 +38,7 @@ const createProduct = function(product) {
         //Attaching our add to cart class to the btn
     productDiv.append(btn);
     //appending the btn to the new div
+
     document.querySelector('.' + product.class).append(productDiv);
     //selecting the product class that matches users choice and adding it to the div
     btn.addEventListener("click", event => {
