@@ -53,13 +53,16 @@
         <p>Total: <span id="total"></span></p>
     </div>
 
-    <button id="cashopt">Cash</button>
-    <button id="cardopt">Card</button>
+    <button onclick="displayCash()">Cash</button>
+    <button onclick="displayCard()">Card</button>
     <div id="cash">
-        <form>
-            <label for="money">How much cash?</label>
-            <input type="number" id="money" value="" />
-        </form>
+
+        <label for="money">How much cash?</label>
+        <input type="number" id="price" placeholder="Price" />
+        <input type="number" id="money" placeholder="Cash" />
+        <button onclick="makeChange()">Submit</button>
+
+
     </div>
     <div id="cardinfo">
         <form action="">
@@ -95,8 +98,17 @@
             <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" />
             <input type="submit" value="Submit" />
         </form>
+        <style>
+            #cardinfo {
+                display: none;
+            }
+            
+            #cash {
+                display: none;
+            }
+        </style>
     </div>
-    <script src="" async defer></script>
+    <script src="posScript.js" async defer></script>
 </body>
 
 </html>
