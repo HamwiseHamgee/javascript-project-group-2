@@ -1,3 +1,6 @@
+myStorage = window.localStorage;
+
+
 const products = [{
         class: "gas",
         img: "img/grom1.jpg",
@@ -53,7 +56,8 @@ const createProduct = function(product) {
     btn.addEventListener("click", event => {
         shoppingCart.push(product);
         console.log(shoppingCart);
-    })
+        localStorage.setItem("cart", product);
+    });
 
 }
 for (product of products) {
@@ -67,3 +71,16 @@ for (product of products) {
     createProduct(product);
 
 }
+
+// Category selector links -- to do
+// document.getElementById("gas").addEventListener("click", event => {
+//     localStorage.setItem("gasClick");
+//     console.log("Hello there");
+// })
+// console.log(localStorage.getItem("gasClick"));
+
+// 
+// document.querySelector(".gas").style.display = "none";
+// document.querySelector(".electric").style.display = "none";
+// document.querySelector(".human-powered").style.display = "none";
+
