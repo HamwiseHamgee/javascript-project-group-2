@@ -1,4 +1,4 @@
-myStorage = window.localStorage;
+let myStorage = window.localStorage;
 
 
 const products = [{
@@ -8,7 +8,7 @@ const products = [{
         price: 2000,
         description: "small bike, goes up to 60mph.",
         id: "grom",
-    }, 
+    },
     {
         class: "electric",
         img: "img/xr-elite.jpg",
@@ -28,6 +28,8 @@ const products = [{
 
 ]
 const shoppingCart = [];
+let counter = 0;
+
 
 
 const createProduct = function(product) {
@@ -51,15 +53,25 @@ const createProduct = function(product) {
     productDiv.append(btn);
     //appending the btn to the new div
 
-    document.querySelector('.' + product.class).append(productDiv);
+    let productContainer = document.querySelector('.' + product.class);
+    if (productContainer) {
+        productContainer.append(productDiv);
+    }
     //selecting the product class that matches users choice and adding it to the div
     btn.addEventListener("click", event => {
         shoppingCart.push(product);
+        counter++;
+        window.localStorage.setItem(`cart item ${counter}`, JSON.stringify(product));
         console.log(shoppingCart);
-        localStorage.setItem("cart", product);
+        Object.keys(localStorage).forEach((key) => {
+            console.log(localStorage.getItem(key));
+        });
+
     });
 
+
 }
+
 for (product of products) {
     // <div id='grom'>
     //             <a href="#"><img src="img/grom1.jpg" alt="bike" width="350" height="300"></a>
@@ -70,7 +82,43 @@ for (product of products) {
     //         </div>
     createProduct(product);
 
+
 }
+// for (product in myStorage) {
+//     //  createProduct(product);
+//     console.log(product);
+// }
+const displayProduct = function(product) {
+    let cartDiv = document.createElement('div')
+        //Creating div for the product
+    cartDiv.setAttribute("id", product.id)
+        //Setting Id from product array
+        //productdiv innerHTML passing array info
+    cartDiv.innerHTML = ` 
+    <a href="#"><img src="${product.img}"width="350"></a>
+    <h3>${product.name}</h3>
+     <p>Price: ${product.price}</p>`
+    let cartContainer = document.querySelector('#cart');
+    if (cartContainer) {
+        cartContainer.append(cartDiv);
+    }
+
+}
+let total = 0;
+
+for (const key in myStorage) {
+    if (Object.hasOwnProperty.call(myStorage, key)) {
+        const element = myStorage[key];
+        console.log(element);
+        const product = JSON.parse(element);
+        displayProduct(product);
+        total += product.price;
+    }
+
+}
+
+//console.log(total);
+
 
 // Category selector links -- to do
 // document.getElementById("gas").addEventListener("click", event => {
@@ -83,4 +131,3 @@ for (product of products) {
 // document.querySelector(".gas").style.display = "none";
 // document.querySelector(".electric").style.display = "none";
 // document.querySelector(".human-powered").style.display = "none";
-
