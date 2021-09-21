@@ -128,6 +128,13 @@ for (const key in myStorage) {
 // console.log(localStorage.getItem("gasClick"));
 
 // 
-// document.querySelector(".gas").style.display = "none";
-// document.querySelector(".electric").style.display = "none";
-// document.querySelector(".human-powered").style.display = "none";
+document.querySelector(".gas").style.display = "none";
+document.querySelector(".electric").style.display = "none";
+document.querySelector(".human-powered").style.display = "none";
+
+
+
+// const gasProducts = document.querySelector(".gas");
+// gasProducts.addEventListener("click", event => {
+//     event.target.style.display = "block";
+// });
