@@ -58,7 +58,7 @@ const createProduct = function(product) {
     productDiv.innerHTML = ` 
     <a href="#"><img src="${product.img}"width="350"></a>
     <h3>${product.name}</h3>
-     <p>Price: ${product.price}</p>
+     <p>Price: $${(Math.round(100*(product.price))/100).toFixed(2)}</p>
      <p>${product.description}</p>`;
     //creating the Add to Cart btn
     let btn = document.createElement("button");
