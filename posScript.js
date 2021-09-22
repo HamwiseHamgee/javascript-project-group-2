@@ -119,10 +119,10 @@ let absoluteTotal = document.getElementById('total');
 absoluteTotal.innerText = `$${Math.round(100*(total * 1.06))/100}`
 
 // Category selector links
-// document.querySelector(".gas").style.display = "none";
-// document.querySelector(".electric").style.display = "none";
-// document.querySelector(".human-powered").style.display = "none";
-// document.getElementById("selection").style.display = "none";
+document.querySelector(".gas").style.display = "none";
+document.querySelector(".electric").style.display = "none";
+document.querySelector(".human-powered").style.display = "none";
+document.getElementById("selection").style.display = "none";
 
 let displayGas = () => {
     document.querySelector(".gas").style.display = "block";
