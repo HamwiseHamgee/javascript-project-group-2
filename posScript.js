@@ -28,7 +28,6 @@
 // const shoppingCart = [];
 // let counter = 0;
 
-<<<<<<< HEAD
 // const createProduct = function(product) {
 //     let productDiv = document.createElement("div");
 //     //Creating div for the product
@@ -49,28 +48,6 @@
 //     //Attaching our add to cart class to the btn
 //     productDiv.append(btn);
 //     //appending the btn to the new div
-=======
-const createProduct = function(product) {
-    let productDiv = document.createElement("div");
-    //Creating div for the product
-    productDiv.setAttribute("id", product.id);
-    //Setting Id from product array
-    //productdiv innerHTML passing array info
-    productDiv.innerHTML = ` 
-    <a href="#"><img src="${product.img}"width="350"></a>
-    <h3>${product.name}</h3>
-     <p>Price: $${(Math.round(100*(product.price))/100).toFixed(2)}</p>
-     <p>${product.description}</p>`;
-    //creating the Add to Cart btn
-    let btn = document.createElement("button");
-    //new button
-    btn.innerHTML = "Add to Cart";
-    //Text to btn
-    btn.classList.add("cartbtn");
-    //Attaching our add to cart class to the btn
-    productDiv.append(btn);
-    //appending the btn to the new div
->>>>>>> 5292861fbbab533c372a2149f22a6205bb30ad2d
 
 //     let productContainer = document.querySelector("." + product.class);
 //     if (productContainer) {
@@ -101,98 +78,7 @@ const createProduct = function(product) {
 //     //         </div>
 //     createProduct(product);
 // }
-<<<<<<< HEAD
 // // for (product in myStorage) {
 // //     //  createProduct(product);
 // //     console.log(product);
 // // }
-=======
-const displayProduct = function(product) {
-    let cartDiv = document.createElement("div");
-    //Creating div for the product
-    cartDiv.setAttribute("id", product.id);
-    //Setting Id from product array
-    //productdiv innerHTML passing array info
-    cartDiv.innerHTML = ` 
-    <a href="#"><img src="${product.img}"width="350"></a>
-    <h3>${product.name}</h3>
-     <p>Price: ${(Math.round(100*(product.price))/100).toFixed(2)}</p>`;
-    let cartContainer = document.querySelector("#cart");
-    if (cartContainer) {
-        cartContainer.append(cartDiv);
-    }
-};
-let total = 0;
-
-for (const key in myStorage) {
-    if (Object.hasOwnProperty.call(myStorage, key)) {
-        const element = myStorage[key];
-        console.log(element);
-        const product = JSON.parse(element);
-        displayProduct(product);
-        total += product.price;
-    }
-}
-
-let subtotal = document.getElementById('subTotal');
-subtotal.innerText = `$${total.toFixed(2)}`;
-
-let tax = document.getElementById('tax');
-tax.innerText = `$${(Math.round(100*(total * .06))/100).toFixed(2)}`
-
-let absoluteTotal = document.getElementById('total');
-absoluteTotal.innerText = `$${(Math.round(100*(total * 1.06))/100).toFixed(2)}`
-
-// Category selector links
-document.querySelector(".gas").style.display = "none";
-document.querySelector(".electric").style.display = "none";
-document.querySelector(".human-powered").style.display = "none";
-document.getElementById("selection").style.display = "none";
-
-let displayGas = () => {
-    document.querySelector(".gas").style.display = "block";
-    document.getElementById("selection").style.display = "block";
-};
-
-let displayElectric = () => {
-    document.querySelector(".electric").style.display = "block";
-    document.getElementById("selection").style.display = "block";
-};
-
-let displayHumanPowered = () => {
-    document.querySelector(".human-powered").style.display = "block";
-    document.getElementById("selection").style.display = "block";
-};
-
-function displayCard() {
-    var x = document.getElementById("cardinfo");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function displayCash() {
-    var x = document.getElementById("cash");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function makeChange() {
-    let cash1 = Number(document.getElementById('money').value);
-    let price1 = Math.round(100 * (total * 1.06)) / 100;
-    if (price1 === cash1) {
-        console.log("no change");
-    } else if (cash1 != null && price1 > cash1) {
-        console.log("need more money");
-    } else if (cash1 > price1) {
-        let result = Math.round(100 * (cash1 - price1)) / 100;
-        console.log(result + " is your change");
-    }
-}
-makeChange();
->>>>>>> 5292861fbbab533c372a2149f22a6205bb30ad2d

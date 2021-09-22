@@ -9,7 +9,7 @@ const displayProduct = function(product) {
     cartDiv.innerHTML = ` 
     <a href="#"><img src="${product.img}"width="350"></a>
     <h3>${product.name}</h3>
-    <p>Price: ${(Math.round(100*(product.price))/100).toFixed(2)}</p>`;
+    <p>Price: $${(Math.round(100*(product.price))/100).toFixed(2)}</p>`;
     let cartContainer = document.querySelector("#cart");
     if (cartContainer) {
         cartContainer.append(cartDiv);
