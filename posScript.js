@@ -120,21 +120,19 @@ for (const key in myStorage) {
 //console.log(total);
 
 
-// Category selector links -- to do
-// document.getElementById("gas").addEventListener("click", event => {
-//     localStorage.setItem("gasClick");
-//     console.log("Hello there");
-// })
-// console.log(localStorage.getItem("gasClick"));
-
-// 
+// Category selector links
 document.querySelector(".gas").style.display = "none";
 document.querySelector(".electric").style.display = "none";
 document.querySelector(".human-powered").style.display = "none";
 
+let displayGas = () => {
+    document.querySelector(".gas").style.display = "block";
+};
 
+let displayElectric = () => {
+    document.querySelector(".electric").style.display = "block";
+};
 
-// const gasProducts = document.querySelector(".gas");
-// gasProducts.addEventListener("click", event => {
-//     event.target.style.display = "block";
-// });
+let displayHumanPowered = () => {
+    document.querySelector(".human-powered").style.display = "block";
+};
