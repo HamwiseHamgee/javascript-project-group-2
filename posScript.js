@@ -124,15 +124,19 @@ for (const key in myStorage) {
 document.querySelector(".gas").style.display = "none";
 document.querySelector(".electric").style.display = "none";
 document.querySelector(".human-powered").style.display = "none";
+document.getElementById("selection").style.display = "none";
 
 let displayGas = () => {
     document.querySelector(".gas").style.display = "block";
+    document.getElementById("selection").style.display = "block";
 };
 
 let displayElectric = () => {
     document.querySelector(".electric").style.display = "block";
+    document.getElementById("selection").style.display = "block";
 };
 
 let displayHumanPowered = () => {
     document.querySelector(".human-powered").style.display = "block";
+    document.getElementById("selection").style.display = "block";
 };
