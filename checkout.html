@@ -51,17 +51,18 @@
     </div>
     <div id="totals">
         <p>Sub-Total: <span id="subTotal"></span></p>
-        <p>Plus Tax: <span id="tax"></span></p>
+        <p>Tax: <span id="tax"></span></p>
         <p>Total: <span id="total"></span></p>
     </div>
 
-    <button id="cashopt">Cash</button>
-    <button id="cardopt">Card</button>
+    <button onclick="displayCash()">Cash</button>
+    <button onclick="displayCard()">Card</button>
     <div id="cash">
-        <form>
-            <label for="money">How much cash?</label>
-            <input type="number" id="money" value="" />
-        </form>
+
+        <label for="money">How much cash?</label>
+        <input type="number" id="money" value="" />
+        <button onclick="makeChange()">Submit</button>
+
     </div>
     <div id="cardinfo">
         <form action="">
