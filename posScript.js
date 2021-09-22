@@ -117,7 +117,7 @@ for (const key in myStorage) {
 
 }
 
-//console.log(total);
+console.log(total);
 
 
 // Category selector links -- to do
