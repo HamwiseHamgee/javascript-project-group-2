@@ -37,7 +37,7 @@ const createProduct = function(product) {
     productDiv.innerHTML = ` 
     <a href="#"><img src="${product.img}"width="350"></a>
     <h3>${product.name}</h3>
-     <p>Price: ${product.price}</p>
+     <p>Price: $${(Math.round(100*(product.price))/100).toFixed(2)}</p>
      <p>${product.description}</p>`;
     //creating the Add to Cart btn
     let btn = document.createElement("button");
@@ -91,7 +91,7 @@ const displayProduct = function(product) {
     cartDiv.innerHTML = ` 
     <a href="#"><img src="${product.img}"width="350"></a>
     <h3>${product.name}</h3>
-     <p>Price: ${product.price}</p>`;
+     <p>Price: ${(Math.round(100*(product.price))/100).toFixed(2)}</p>`;
     let cartContainer = document.querySelector("#cart");
     if (cartContainer) {
         cartContainer.append(cartDiv);
@@ -110,13 +110,13 @@ for (const key in myStorage) {
 }
 
 let subtotal = document.getElementById('subTotal');
-subtotal.innerText = `$${total}`;
+subtotal.innerText = `$${total.toFixed(2)}`;
 
 let tax = document.getElementById('tax');
-tax.innerText = `$${Math.round(100*(total * .06))/100}`
+tax.innerText = `$${(Math.round(100*(total * .06))/100).toFixed(2)}`
 
 let absoluteTotal = document.getElementById('total');
-absoluteTotal.innerText = `$${Math.round(100*(total * 1.06))/100}`
+absoluteTotal.innerText = `$${(Math.round(100*(total * 1.06))/100).toFixed(2)}`
 
 // Category selector links
 document.querySelector(".gas").style.display = "none";
