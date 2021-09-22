@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Skewt Store</title>
+    <title>Working Title</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
@@ -26,19 +26,9 @@
           </button>
             </div>
         </nav>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-light shadow-3 p-4">
-                <button class="btn btn-link btn-block border-bottom m-0">
-            Link 1
-          </button>
-                <button class="btn btn-link btn-block border-bottom m-0">
-            Link 2
-          </button>
-                <button class="btn btn-link btn-block m-0">Link 3</button>
-            </div>
+        
         </div>
-        </div>
-        <h1>Page Title</h1>
+        
 
         <!-- Search bar (gotta clean up) -->
         <input type="text" placeholder="Search" />
@@ -48,26 +38,31 @@
     </header>
 
     <main>
-        <h2>Choose your rental</h2>
+        
+        <h1>Welcome to Wheels-for-Rent</h1>
+        <h2>Des Moines' premier motorized and non-motorized vehicle rental location</h2>
+
+        <img src="img/grom1.jpg" alt="bike" width="350" height="300">
+        <h2>Choose a rental category:</h2>
         <div id="category-buttons">
             <div id="gas">
-                <img src="img/grom1.jpg" alt="bike" width="350" height="300">
                 <br>
-                <a href="selection-page.html">Gas</a>
+                <button onclick="displayGas()">Gas</button>
                 <br>
             </div>
             <div id="electric">
                 <img id="electric-scooter">
-                <a href="selection-page.html">Electric</a>
+                <button onclick="displayElectric()">Electric</button>
                 <br>
             </div>
             <div id="human-powered">
                 <img id="bicycle">
-                <a href="selection-page.html">Human Powered</a>
+                <button onclick="displayHumanPowered()">Human Powered</button>
             </div>
         </div>
 
-        <h2>Select a Brand</h2>
+        <h2 id="selection">Select a Brand</h2>
+        <div>
         <!-- add 4 more DIVs for class gas -->
         <div class="gas">
 
@@ -78,7 +73,8 @@
         </div>
         <!-- make 4 more DIVS for class human-powered -->
         <div class="human-powered">
-            <img id="bike">
+            <!-- <img id="bike"> -->
+        </div>
         </div>
 
     </main>
@@ -91,6 +87,9 @@
     <![endif]-->
 
     <script src="posScript.js" async defer></script>
+    <!-- <style>
+        .gas
+    </style> -->
 </body>
 
 </html>
