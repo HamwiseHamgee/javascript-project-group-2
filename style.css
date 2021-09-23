@@ -76,7 +76,8 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: black;
+    background-color: lightgrey;
 }
 
 .fa-shopping-cart {
