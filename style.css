@@ -70,7 +70,7 @@
 /* Search Bar & nav */
 
 .search-bar {
-    position: fixed;
+    position: absolute;
     top: 1%;
     left: 56%;
     width: 35%;
@@ -84,8 +84,8 @@ body {
 
 .fa-shopping-cart {
     position: fixed;
-    left: 95%;
-    top: 1.7%;
+    left: 94%;
+    top: 1.5%;
 }
 
 #logo {
