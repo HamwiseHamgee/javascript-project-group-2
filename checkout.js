@@ -37,23 +37,25 @@ let absoluteTotal = document.getElementById('total');
 absoluteTotal.innerText = `$${(Math.round(100*(total * 1.06))/100).toFixed(2)}`
 
 
+document.getElementById("cardinfo").style.display = "none";
+document.getElementById("cash").style.display = "none";
 
 
 function displayCard() {
     var x = document.getElementById("cardinfo");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
         x.style.display = "none";
+    } else {
+        x.style.display = "block";
     }
 }
 
 function displayCash() {
     var x = document.getElementById("cash");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
         x.style.display = "none";
+    } else {
+        x.style.display = "block";
     }
 }
 
@@ -69,3 +71,10 @@ function makeChange() {
         console.log(result + " is your change");
     }
 }
+
+document.getElementById("receipt-button").style.display = "none";
+
+document.querySelector(".submit-button").addEventListener("click", event => {
+    // event.preventDefault();
+    document.getElementById("receipt-button").style.display = "block";
+});
