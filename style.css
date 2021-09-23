@@ -91,3 +91,63 @@ body {
 #logo {
     display: inline-block;
 }
+
+#gasopt {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#electricopt {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#humanopt {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.mainTitle {
+    padding: 60px;
+    text-align: center;
+    background: green;
+    color: white;
+    font-size: 45px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.secondaryTitle {
+    padding: 45px;
+    text-align: center;
+    background: green;
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
