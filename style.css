@@ -75,6 +75,12 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+}
+
+.fa-shopping-cart {
+    position: fixed;
+    left: 95%;
+    top: 2%;
 }
