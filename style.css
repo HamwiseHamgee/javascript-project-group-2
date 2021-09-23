@@ -151,3 +151,13 @@ body {
     font-size: 25px;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+.receipt-page {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.receipt-total {
+    font-size: 30px;
+}

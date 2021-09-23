@@ -11,10 +11,10 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="receipt-page">
     <h1>Thank you! Your rental is due back 12 hours after pickup.
     </h1>
     <div id='receipt'>
@@ -22,10 +22,11 @@
 
         <p></p>
     </div>
-    <div id='subTotal'></div>
-    <div id='tax'></div>
-    <div id='total'></div>
-
+    <div class="receipt-total">
+        <div id='subTotal'></div>
+        <div id='tax'></div>
+        <div id='total'></div>
+    </div>
     <script src="receipt.js"></script>
     <script src="main.js"></script>
 </body>
