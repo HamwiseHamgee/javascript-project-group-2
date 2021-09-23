@@ -73,8 +73,11 @@ function makeChange() {
 }
 
 document.getElementById("receipt-button").style.display = "none";
+const buttons = document.querySelectorAll(".submit-button");
+for (button of buttons) {
+    button.addEventListener("click", event => {
+        // event.preventDefault();
 
-document.querySelector(".submit-button").addEventListener("click", event => {
-    // event.preventDefault();
-    document.getElementById("receipt-button").style.display = "block";
-});
+        document.getElementById("receipt-button").style.display = "block";
+    });
+}

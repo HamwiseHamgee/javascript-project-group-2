@@ -4,20 +4,18 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>checkout</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="" />
-    <script
-      src="https://kit.fontawesome.com/b02c5e0c01.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+    <script src="https://kit.fontawesome.com/b02c5e0c01.js" crossorigin="anonymous"></script>
+</head>
 
-  <body>
+<body>
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -25,53 +23,45 @@
       </p>
     <![endif]-->
     <header>
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
           </button>
-        </div>
-      </nav>
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-light shadow-3 p-4">
-          <button class="btn btn-link btn-block border-bottom m-0">
+            </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-light shadow-3 p-4">
+                <button class="btn btn-link btn-block border-bottom m-0">
             Link 1
           </button>
-          <button class="btn btn-link btn-block border-bottom m-0">
+                <button class="btn btn-link btn-block border-bottom m-0">
             Link 2
           </button>
-          <button class="btn btn-link btn-block m-0">Link 3</button>
+                <button class="btn btn-link btn-block m-0">Link 3</button>
+            </div>
         </div>
-      </div>
-      <h1>Page Title</h1>
-      <input type="text" placeholder="Search" />
-      <a href="google.com"><i class="fas fa-shopping-cart"></i></a>
+        <h1>Page Title</h1>
+        <input type="text" placeholder="Search" />
+        <a href="google.com"><i class="fas fa-shopping-cart"></i></a>
     </header>
     <h2>Cart</h2>
     <div id="cart"></div>
     <div id="totals">
-      <p>Sub-Total: <span id="subTotal"></span></p>
-      <p>Tax: <span id="tax"></span></p>
-      <p>Total: <span id="total"></span></p>
+        <p>Sub-Total: <span id="subTotal"></span></p>
+        <p>Tax: <span id="tax"></span></p>
+        <p>Total: <span id="total"></span></p>
     </div>
 
     <button onclick="displayCash()">Cash</button>
     <button onclick="displayCard()">Card</button>
     <div id="cash">
-      <label for="money">How much cash?</label>
-      <input type="number" id="money" value="" />
-      <button class="submit-button" onclick="makeChange()">Submit</button>
+        <label for="money">How much cash?</label>
+        <input type="number" id="money" value="" />
+        <button class="submit-button" onclick="makeChange()">Submit</button>
     </div>
     <div id="cardinfo">
-      <!-- <form action=""> -->
+        <!-- <form action=""> -->
         <label for="fname">First name:</label><br />
         <input type="text" id="fname" name="fname" value="" /><br />
         <label for="lname">Last name:</label><br />
@@ -80,8 +70,7 @@
         <input type="text" id="cnum" name="cnum" value="" /><br />
         <label for="cvv">CVV:</label><br />
         <input type="number" id="cvv" name="cvv" value="" />
-        <br />
-        Card Expiration:
+        <br /> Card Expiration:
         <select name="expireMM" id="expireMM">
           <option value="">Month</option>
           <option value="01">January</option>
@@ -105,19 +94,14 @@
           <option value="23">2023</option>
           <option value="24">2024</option>
         </select>
-        <input
-          class="inputCard"
-          type="hidden"
-          name="expiry"
-          id="expiry"
-          maxlength="4"
-        />
+        <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" />
         <input class="submit-button" type="submit" value="Submit" />
-      <!-- </form> -->
+        <!-- </form> -->
     </div>
 
-    <a  href="receipt.html"><button id="receipt-button">Click here for receipt</button></a>
+    <a href="receipt.html"><button id="receipt-button">Click here for receipt</button></a>
     <script src="posScript.js"></script>
     <script src="checkout.js"></script>
-  </body>
+</body>
+
 </html>
