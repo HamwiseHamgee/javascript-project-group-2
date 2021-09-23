@@ -1,0 +1,65 @@
+.cashbtn {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.cardbtn {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#totals {
+    border-style: solid;
+    border-color: green;
+    padding-left: 10px;
+}
+
+#cartTitle {
+    padding: 45px;
+    text-align: center;
+    background: green;
+    color: white;
+    font-size: 30px;
+}
+
+#storetitle {
+    padding: 60px;
+    text-align: center;
+    background: green;
+    color: white;
+    font-size: 40px;
+}
+
+#cash {
+    border-style: solid;
+    border-color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#cardinfo {
+    border-style: solid;
+    border-color: green;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}

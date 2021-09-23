@@ -63,12 +63,12 @@ function makeChange() {
     let cash1 = Number(document.getElementById('money').value);
     let price1 = Math.round(100 * (total * 1.06)) / 100;
     if (price1 === cash1) {
-        console.log("no change");
+        alert("no change");
     } else if (cash1 != null && price1 > cash1) {
-        console.log("need more money");
+        alert("need more money");
     } else if (cash1 > price1) {
-        let result = Math.round(100 * (cash1 - price1)) / 100;
-        console.log(result + " is your change");
+        let result = (Math.round(100 * (cash1 - price1)) / 100).toFixed(2);
+        alert("$" + result + " is your change");
     }
 }
 
