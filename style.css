@@ -73,3 +73,8 @@
     left: 59%;
     width: 35%;
 }
+
+body {
+    font-family: sans-serif;
+    color: white;
+}
