@@ -25,7 +25,7 @@ const products = [{
         class: "gas",
         img: "img/grom1.jpg",
         name: "Honda Grom",
-        price: 2000,
+        price: 70,
         description: "Small bike for little baby buhbuhs.",
         id: "grom"
     },
@@ -77,10 +77,14 @@ const products = [{
         description: "If your name is Sam, DO NOT RENT THIS. If you ride it you will break your leg.",
         id: "onewheel"
     },
-    // {
-    //     class: "electric",
-
-    // },
+    {
+        class: "electric",
+        img: "img/segway.jpg",
+        name: "Segway Ninebot S MAX",
+        price: 66,
+        description: "This is the sickest frickin vehicle we have, I swear.",
+        id: "segway"
+    },
     {
         class: "human-powered",
         img: "img/uni.jpeg",
@@ -89,6 +93,30 @@ const products = [{
         description: "Good luck with this, hipsters",
         id: "butyl"
     },
+    {
+        class: "human-powered",
+        img: "img/genesis.jpeg",
+        name: "Genesis 700c Saber Road Bike",
+        price: 75,
+        description: "If you're a fancy business boy in tight slacks, this is the bike for you.",
+        id: "genesis"
+    },
+    {
+        class: "human-powered",
+        img: "img/tidalblackedge.jpg",
+        name: "Tidal Drop Down Longboard",
+        price: 3,
+        description: "Perfect for a trip to the neighborhood co-op!",
+        id: "tidal"
+    },
+    {
+        class: "human-powered",
+        img: "img/razorscooter.png",
+        name: "Razor Scooter",
+        price: 12,
+        description: "Kiss your shins goodbye, the Razor Scooter is back for revenge from the year 2000.",
+        id: "razor"
+    }
 ];
 const shoppingCart = [];
 let counter = 0;

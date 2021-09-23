@@ -85,3 +85,7 @@ body {
     left: 95%;
     top: 1.7%;
 }
+
+#logo {
+    display: inline-block;
+}
