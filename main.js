@@ -26,24 +26,68 @@ const products = [{
         img: "img/grom1.jpg",
         name: "Honda Grom",
         price: 2000,
-        description: "small bike, goes up to 60mph.",
-        id: "grom",
+        description: "Small bike for little baby buhbuhs.",
+        id: "grom"
+    },
+    {
+        class: "gas",
+        img: "img/vespagtssuper.jpg",
+        name: "Vespa GTS Super",
+        price: 28,
+        description: "Feel like an Italian! Or a mod!",
+        id: "gtssuper"
+    },
+    {
+        class: "gas",
+        img: "img/hondacb750.png",
+        name: "Honda CB750",
+        price: 6.78,
+        description: "Honestly we're not really sure if this one still works, but you can rent it I guess.",
+        id: "cb750"
+    },
+    {
+        class: "gas",
+        img: "img/harleysoftail.jpg",
+        name: "Harley Davidson Softail",
+        price: 68.99,
+        description: "An American classic for divorced dads and retirees!",
+        id: "softail"
     },
     {
         class: "electric",
         img: "img/xr-elite.jpg",
         name: "XR Elite",
         price: 30,
-        description: "easy commuter and easy ride",
-        id: "xrelite",
+        description: "Easy commuter and easy ride! DON'T RENT BIRD SCOOTERS, WE'RE WAY BETTER",
+        id: "xrelite"
     },
+    {
+        class: "electric",
+        img: "img/radrunner.jpg",
+        name: "Rad Power Bikes RadRunner 1",
+        price: 15,
+        description: "The RadRunner: for cyclists who don't want to exercise.",
+        id: "radrunner"
+    },
+    {
+        class: "electric",
+        img: "img/onewheelxr.jpg",
+        name: "One Wheel XR",
+        price: 40,
+        description: "If your name is Sam, DO NOT RENT THIS. If you ride it you will break your leg.",
+        id: "onewheel"
+    },
+    // {
+    //     class: "electric",
+
+    // },
     {
         class: "human-powered",
         img: "img/uni.jpeg",
         name: "Butyl",
         price: 30,
         description: "Good luck with this, hipsters",
-        id: "butyl",
+        id: "butyl"
     },
 ];
 const shoppingCart = [];
